@@ -150,6 +150,10 @@
         max-width: 100%; /* Make the image responsive by setting its max-width to 100% */
         height: auto; /* Automatically adjust the image's height to maintain its aspect ratio */
       }
+      .navbar-brand img {
+        width: 150px; /* Adjust the width as needed */
+        height: auto; /* Maintains aspect ratio */
+      }
   </style>
   </head>
 
@@ -158,7 +162,7 @@
       <div class="hero_bg_box">
         <!-- <img src="images/hero-bg.jpg" alt="" /> -->
         <video autoplay muted loop>
-          <source src="videos/movie.mp4" type="video/mp4" />
+          <source src="videos/trafic_-_53902 (Original).mp4" type="video/mp4" />
         </video>
       </div>
       <!-- header section strats -->
@@ -166,7 +170,7 @@
         <div class="header_bottom">
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-              <a class="navbar-brand" href="index.html"> CloudOne </a>
+              <a class="navbar-brand" href="index.html">   <img src="images/cloudone_logo_option_4_page-0001-removebg-preview.png" alt="CloudOne Logo" /> </a>
 
               <button
                 class="navbar-toggler"
@@ -574,11 +578,15 @@
               <div class="heading_container heading_center">
                 <h2>Get In Touch</h2>
               </div>
-              <form action="">
+              <form
+  action="https://formspree.io/f/xvojyoyp"
+  method="POST"
+>
                 <div class="form-row">
                   <div class="form-group col">
                     <input
                       type="text"
+                      name ="name"
                       class="form-control"
                       placeholder="Your Name"
                     />
@@ -588,6 +596,7 @@
                 <div class="form-row">
                   <div class="form-group col">
                     <input
+                    name="email"
                       type="email"
                       class="form-control"
                       placeholder="Email"
@@ -597,6 +606,7 @@
                 <div class="form-row">
                   <div class="form-group col">
                     <input
+                    name ="message"
                       type="text"
                       class="message-box form-control"
                       placeholder="Message"
@@ -604,7 +614,7 @@
                   </div>
                 </div>
                 <div class="btn_box">
-                  <button>SEND</button>
+                  <button type="submit">SEND</button>
                 </div>
               </form>
             </div>
@@ -633,10 +643,7 @@
               <div class="info_detail">
                 <h5>Services</h5>
                 <p>
-                  Randomized words which don't look even slightly believable. If
-                  you are going to use a passage of Lorem Ipsum, you need to be
-                  sure
-                </p>
+                  We offer a wide range of services, including delivery, surveillance, mapping, and surveying.
               </div>
             </div>
             <div class="col-lg-2 col-md-5">
