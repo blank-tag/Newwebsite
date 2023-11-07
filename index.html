@@ -46,6 +46,28 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <style>
+
+      .card-content {
+        flex: 2;
+    }
+    
+    .tech-details {
+        background: #f0f0f0;
+        padding: 10px;
+    }
+    
+    .tech-details h3 {
+        font-size: 18px;
+    }
+    
+    .tech-details ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .tech-details li {
+        margin: 5px 0;
+    }
       .footer {
         background-color: #004445;
         color: #fff;
@@ -411,35 +433,57 @@
     <section class="team_section layout_padding">
       <div class="heading_container heading_center">
           <h2>Our Products</h2>
+          <p>Innovation meets necessity with our cutting-edge drone solutions, addressing critical delivery and surveillance needs with precision and efficiency.</p>
       </div>
       <div class="tabs">
           <div class="tab" onclick="showTab('deliveryDrones')">Delivery Drones</div>
           <div class="tab" onclick="showTab('surveillanceDrones')">Surveillance Drones</div>
       </div>
       <div id="deliveryDrones" class="content active">
-          <div class="product">
-              <div class="card1">
-                  <div class="card-content">
-                      <p>Delivery drones are unmanned aerial vehicles designed to transport packages and goods from one location to another. They are equipped with advanced technology, including GPS and sensors, to ensure precise navigation and safe deliveries. Delivery drones offer a cost-effective and efficient solution for delivering small packages in various industries, such as e-commerce, healthcare, and logistics. These drones are capable of reaching remote or hard-to-access areas, making them a valuable tool for last-mile delivery services. With their ability to reduce delivery times and minimize human intervention, delivery drones are at the forefront of revolutionizing the logistics and delivery industry.</p>
+        <div class="product">
+            <div class="card1">
+                <div class="card-content">
+                    <div class="image">
+                        <img src="images/deliverydrone.png" alt="Delivery Drone Image" width="300px">
+                    </div>
+                    <p>Efficient and versatile, our delivery drones swiftly transport essential goods, from medical supplies to groceries, with payloads ranging from 1 KG to 25 KG. They ensure timely, life-saving deliveries even in remote or challenging locations.</p>
+                    <div class="tech-details">
                      
-                  </div>
-                  <!-- <div class="image">
-                      <img src="images/deliverydrone.png" alt="Delivery Drone Image">
-                  </div> -->
-                  <button class="btn">Learn More</button>
-              </div>
-          </div>
-      </div>
+                        <ul>
+                            <li><strong>PayLoad:</strong> 1Kg up to 25Kg</li>
+                            <li><strong>Flying Capacity:</strong> 30 mins +</li>
+                            <li><strong>Battery:</strong> 6000 mAh 2s LiPo</li>
+                            <li><strong>Camera:</strong> 4K Video | 12 MP | 360° Range</li>
+                            <li><strong>UAV Type:</strong> Mini & Macro</li>
+                            <!-- Add more tech details as needed -->
+                        </ul>
+                    </div>
+                    <!-- <button class="btn">Learn More</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
       <div id="surveillanceDrones" class="content">
           <div class="product">
               <div class="card1">
                   <div class="card-content">
-                      <p>Equipped with high-resolution cameras and sometimes specialized sensors, surveillance drones are deployed for a wide range of applications, including security, law enforcement, agriculture, and environmental monitoring. They provide a bird's-eye view of areas of interest, allowing for efficient and comprehensive data collection. Surveillance drones are valuable tools in enhancing situational awareness, detecting unauthorized activities, and conducting aerial inspections. Their ability to access hard-to-reach locations and capture real-time data makes them indispensable for various surveillance and monitoring tasks.</p>
-                      <button class="btn">Learn More</button>
+                    <div class="image">
+                      <img src="images/9-01.png" alt="Surveillance Drone Image" width="300px">
                   </div>
-                  <div class="image">
-                      <img src="your_surveillance_drone_image_url_here" alt="Surveillance Drone Image">
+                      <p>Our surveillance drones, equipped with advanced night vision cameras and sensors, provide round-the-clock monitoring, detecting anomalies like intruders, extreme weather, and natural disasters. Their flexibility in flight paths ensures comprehensive situational awareness in remote areas.</p>
+                      <div class="tech-details">
+                     
+                        <ul>
+                            <li><strong>Target Detection : 300m +</strong> </li>
+                            <li><strong>Camera :</strong> 20x HD</li>
+                            <li><strong>Battery :</strong> ithium-ion batteries </li>
+                            <!-- Add more tech details as needed -->
+                        </ul>
+                    </div>
+                      <!-- <button class="btn">Learn More</button> -->
                   </div>
+                  
               </div>
           </div>
       </div>
@@ -519,7 +563,7 @@
           <div class="col-md-6 px-0">
             <div class="img-box">
               <img
-                src="images/Drone png 06.png"
+                src="images/3.png"
                 class="box_img"
                 alt="about img"
               />
