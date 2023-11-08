@@ -154,6 +154,30 @@
         width: 150px; /* Adjust the width as needed */
         height: auto; /* Maintains aspect ratio */
       }
+      /* CSS for curved border */
+.curved-border {
+  background: #f2f2f2; /* Background color */
+  border-radius: 50px 50px 0 0; /* Adjust the border radius as needed */
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+/* CSS for centering text */
+.about-content {
+  text-align: center;
+}
+
+/* CSS for the "About Us" heading */
+.about-content h2 {
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-size: 36px; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* CSS for the paragraph text */
+.about-content p {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
   </style>
   </head>
 
@@ -410,23 +434,15 @@
 
     <!-- about section -->
 
-    <section class="about_section">
-      <div class="container-fluid">
+    <section class="about_section curved-border">
+      <div class="container">
         <div class="row">
-          <div class="col-md-5 offset-md-1">
-            <div class="detail-box pr-md-2">
-              <div class="heading_container">
-                <h2 class="">About Us</h2>
-              </div>
+          <div class="col-md-12 text-center">
+            <div class="about-content">
+              <h2>About Us</h2>
               <p class="detail_p_mt">
-                At CloudOne, we're passionate about drones. Our innovative startup fuses the latest AI technology with modern engineering to create  UAVs. We're driven by a vision of intelligent, versatile drones that transform industries and lives. Quality is our hallmark, and our rigorous testing ensures reliable, top-tier products. Our customer-centric approach means you'll find the perfect drone for your needs, whether you're an enthusiast or professional. Join us in shaping the future of drone technology.
+                At CloudOne, we're passionate about drones. Our innovative startup fuses the latest AI technology with modern engineering to create UAVs. We're driven by a vision of intelligent, versatile drones that transform industries and lives. Quality is our hallmark, and our rigorous testing ensures reliable, top-tier products. Our customer-centric approach means you'll find the perfect drone for your needs, whether you're an enthusiast or professional. Join us in shaping the future of drone technology.
               </p>
-          
-            </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="img-box">
-              <img src="images/drone12.png" class="box_img" alt="about img" width="500px" height="500px" />
             </div>
           </div>
         </div>
